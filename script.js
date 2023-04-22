@@ -23,10 +23,13 @@ for(let i = 0; i < reasonbtn.length; i++){
     reasonbtn[i].addEventListener('click', function(){
         this.classList.toggle("active")
         let panel = this.nextElementSibling;
+        let vniz = document.querySelector('#ourplus')
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
           } else {
+            panel.classList.remove('unvisible');
             panel.style.maxHeight = panel.scrollHeight + "px";
-          }
+        }
     })
 }
+

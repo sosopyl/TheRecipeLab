@@ -1,6 +1,6 @@
 @font-face {
     font-family: "baltica";
-    src: url("fonts/opensans.woff2") format("woff2"),
+    src: url(font/futuris-cyrillic_[allfont.ru].ttf) format("woff2"),
     url("font/baltica_[allfont.ru].ttf") format("woff");
     font-weight: normal;
     font-style: normal;
@@ -69,6 +69,12 @@ header{
 .hidding{
     display: none;
 }
+.shrift{
+    font-family: 'baltica';
+}
+.big{
+    font-weight: bold;
+}
 .search input{
     margin-right: 10px;
     width: 70%;
@@ -76,11 +82,16 @@ header{
     border-bottom: 1px solid grey;
 }
 nav{
+    font-family: 'baltica';
     margin: 10px auto;
     display: grid;
     max-width: 1000px;
     grid-template-areas: 'c1 c2 c3 c4 c5 c6';
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+nav div a:hover, nav div a:active{
+    color: orange;
+    
 }
 #cat1{
     width: 100%;
@@ -154,6 +165,7 @@ nav{
     font-size: 28px;
 }
 #whyus{
+    font-family: 'baltica';
     margin-top: 100px;
     max-width: 1100px;
     width: 80%;
@@ -203,7 +215,7 @@ justify-content: end;
     padding-top: 25PX;
 }
 
-#aboutreasons{
+.aboutreasons{
     width: 90%;
     font-family: "ninactt" ;
     margin-top: 150px;
@@ -211,13 +223,15 @@ justify-content: end;
     text-align: center;
     max-width: 650px;
 }
-#aboutreasons h3{
+.aboutreasons h3{
     width: 100%;
 }
 #ourplus{
     padding: 0px 15px;
     max-width: 1000px;
-    margin-bottom: 300px;
+    height: fit-content;
+    padding-bottom: 50px;
+    margin-bottom: 300px; 
     width: 100%;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -228,14 +242,38 @@ justify-content: end;
     width: 100%;
     height: 200px;
 }
+a{
+    text-decoration: none;
+    color: orange;
+}
+.back{
+    padding: 5px 15px;
+    background-color: white;
+    border: 1px solid orange;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.back:hover{
+    background-color: orange;
+}
 #quas{
+    font-family: 'baltica';
     width: 50%;
     padding-bottom: 10px;
     margin: 0px 25%;
     text-align: center;
     max-width: 1000px;
-    margin-bottom: 40px;
     border-bottom: 1px solid grey;
+}
+#quas2{
+    
+    font-style: italic;
+    padding-bottom: 40px;
+    width: 50%;
+    margin: 0px 25%;
+    text-align: center;
+    max-width: 1000px;
+    color: rgb(216, 216, 216);
 }
 
 .reasonbtn{
@@ -266,6 +304,7 @@ justify-content: end;
     opacity: 30%;
   }
 .reasontext {
+    font-family: 'baltica';
     width: 100%;
     text-align: center;
     padding: 0 0px;
@@ -274,7 +313,18 @@ justify-content: end;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+
 .reasontext h5{
     padding-bottom: 15px;
     border-bottom: 1px solid grey;
+}
+.unvisible{
+    position: absolute;
+    margin-bottom: 0px;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(129, 113, 81);
+    text-align: center;
 }
