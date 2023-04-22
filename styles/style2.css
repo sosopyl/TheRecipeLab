@@ -1,0 +1,27 @@
+#testbody{
+    width: 90%;
+    margin:  auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+.question{
+    width: 100%;
+    display: grid;
+}
+label{
+    margin-left: 30px;
+    font-size: 12px;
+}
+.variants{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.question h6{
+    font-family: 'baltica';
+    font-size: 20px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 8px;
+}
