@@ -21,5 +21,6 @@ btn.addEventListener('click', function(){
             testing.push(res1.slice(1))
         }
     }
-    console.log(testing)
+    let itog = new Set(testing)
+    console.log(itog)
 })
