@@ -92,8 +92,63 @@ label{
 }
 
 .results{
-    width: 1000%;
-    max-width: 1200px;
-    height: 500px;
-    background-color: blueviolet
+    width: 100%;
+    max-width: 1000px;
+    height: autopx;
+    /* background-color: blueviolet */
+}
+
+.resulttext {
+    margin-bottom: 90px;
+    font-family: 'baltica';
+    /* padding: 0 18px; */
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: max-height 0.2s ease-out;
+    display: grid;
+    column-gap: 20px;
+    grid-template-areas: 
+    'imgres nameres nameres'
+    'imgres textres textres'
+    'imgres . btnres';
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 2fr 6fr 1fr;
+
+}
+.nameofmeal{
+    width: 100%;
+    text-align: left;
+}
+.resulttext p{
+  grid-area: textres;
+  font-size: 17px;
+}
+.resulttext a{
+    grid-area: btnres;
+    width: 100%;
+    text-align: end;
+  }
+.resulttext h2{
+    grid-area: nameres;
+  }
+.resultimg{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    grid-area: imgres;
+}
+
+.resultimg img{
+    height: auto; 
+    /* min-height:  100%;  */
+    max-height: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.unseen{
+    display: none;
 }
