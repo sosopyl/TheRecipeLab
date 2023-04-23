@@ -68,3 +68,32 @@ label{
     margin: 5px;
     font-size: 18px;
 } 
+.knowresults{
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    padding-right: 10px;
+}
+.knowresults button{
+    width: 250px;
+    background-color: orange;
+    padding: 10px 15px;
+    border: 0px;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+}
+.knowresults button p{
+    text-transform: uppercase;
+    font-family: 'baltica';
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.results{
+    width: 1000%;
+    max-width: 1200px;
+    height: 500px;
+    background-color: blueviolet
+}
