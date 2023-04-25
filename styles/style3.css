@@ -1,0 +1,42 @@
+.recipte{
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-areas: 
+    'RIMG RNAME'
+    'RINFA RMAIN'
+    'RINGR RMAIN'
+    ;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 2fr 4fr;
+}
+.nameofrecipte{
+    grid-area: RNAME;
+    width: 100%;
+    height: 100PX;
+    background-color: aquamarine;
+}
+.infarecipte{
+    grid-area: RINFA;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(253, 255, 127);
+}
+.ingrediets{
+    grid-area: RINGR;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 127, 159);
+}
+.recipteimg{
+    grid-area: RIMG;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(193, 127, 255);
+}
+.mainrecipte{
+    grid-area: RMAIN;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(120, 145, 143);
+}
