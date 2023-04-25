@@ -1,5 +1,6 @@
 .recipte{
-    margin-top: 100px;
+    font-family: 'baltica';
+    /* margin-top: 100px; */
     width: 95%;
     max-width: 1000px;
     display: grid;
@@ -11,7 +12,14 @@
     column-gap: 15px;
     row-gap: 5px;
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-rows: 1fr 1fr 2fr;
+}
+.recomend{
+    font-family: 'baltica';
+    margin: 20px auto;
+    width: 95%;
+    max-width: 1000px;
+    border-bottom: 1px solid grey;
 }
 .nameofrecipte{
     border-bottom: 1px solid grey;
@@ -36,7 +44,7 @@
 .infarecipte{
     grid-area: RINFA;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     border-bottom: 1px solid grey;
     /* background-color: rgb(253, 255, 127); */
     display: grid;
@@ -78,6 +86,13 @@
     height: 100%;
     /* background-color: rgb(255, 127, 159); */
 }
+.bigletters {
+    font-variant: small-caps; 
+    font-size: larger;
+}
+.grey{
+    color: grey;
+}
 .recipteimg{
     grid-area: RIMG;
     width: 100%;
@@ -88,10 +103,91 @@
     width: 100%;
     height: 100%;
 }
-
+.imgsize{
+    width: 20px;
+    height: 100%;
+}
+.line{
+   display: inline-flex;
+}
+.zzz{
+    margin:  auto 5px;
+    margin-right: 0px;
+    font-size: 20px;
+}
+.step{
+    margin-top: 30px;
+}
+.imgsize{
+    width: 25px;
+    height: 100%;
+    margin-left: 15px;
+}
 .mainrecipte{
     grid-area: RMAIN;
     width: 100%;
     height: 100%;
-    background-color: rgb(120, 145, 143);
+    /* background-color: rgb(120, 145, 143); */
+}
+.likerecipe{
+    font-family: 'baltica';
+    font-size: 30px;
+    width: 95%;
+    margin-top: 15px;
+    max-width: 1000px;
+}
+.anotherrecipes{
+    margin-top: 15px;
+    margin-bottom: 50px;
+    width: 95%;
+    max-width: 1000px;
+    height: auto;
+    /* background-color: yellowgreen; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.anotherrecipe:hover{
+    box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.459);
+}
+.anotherrecipe{
+    font-family: 'baltica';
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.anotherimg{
+    width: 100%;
+}
+.anotherimg img{
+    padding: 5%;
+    width: 100%;
+}
+.nopad div{
+    padding: 0px;
+    margin-bottom: 20px;
+}
+.nopad{
+    border: 0px;
+}
+.nopad img{
+    width: 30%;
+}
+.seeanother{
+    background-color: white;
+    border: 0px;
+    width: 100%;
+    padding: 7px 0px;
+    color: black;
+    border-top: 1px solid grey;
+}
+.seeanother:hover{
+    background-color: rgb(230, 230, 230);
+    border: 0px;
+    width: 100%;
+    padding: 7px 0px;
+    color: black;
 }
