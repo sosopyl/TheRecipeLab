@@ -1,5 +1,6 @@
 .recipte{
-    width: 100%;
+    margin-top: 100px;
+    width: 95%;
     max-width: 1000px;
     display: grid;
     grid-template-areas: 
@@ -7,26 +8,75 @@
     'RINFA RMAIN'
     'RINGR RMAIN'
     ;
+    column-gap: 15px;
+    row-gap: 5px;
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: 1fr 2fr 4fr;
+    grid-template-rows: 1fr 1fr 3fr;
 }
 .nameofrecipte{
+    border-bottom: 1px solid grey;
     grid-area: RNAME;
+    font-family: 'baltica';
     width: 100%;
-    height: 100PX;
-    background-color: aquamarine;
+    height: 100%;
+    /* background-color: aquamarine; */
 }
+.nameofrecipte p{
+    width: 80%;
+    margin-left: 20%;
+    text-align: end;
+}
+.nameofrecipte h4{
+    width: 80%;
+    margin-left: 20%;
+    text-align: end;
+    font-size: 35px;
+}
+
 .infarecipte{
     grid-area: RINFA;
     width: 100%;
     height: 100%;
-    background-color: rgb(253, 255, 127);
+    border-bottom: 1px solid grey;
+    /* background-color: rgb(253, 255, 127); */
+    display: grid;
+    grid-template-areas: 
+    'time port'
+    'hard type';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
+.infarecipte p {
+    margin:  0px;
+    padding: 0px;
+}
+.infarecipte div{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.timeofcooking{
+    grid-area: time;
+}
+.infarecipte img{
+    width: 40%;
+}
+.portions{
+    grid-area: port;
+}
+.howhard{
+    grid-area: hard;
+}
+.typeofrecipte{
+    grid-area: type;
+}
+
 .ingrediets{
     grid-area: RINGR;
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 127, 159);
+    /* background-color: rgb(255, 127, 159); */
 }
 .recipteimg{
     grid-area: RIMG;
@@ -34,6 +84,11 @@
     height: 100%;
     background-color: rgb(193, 127, 255);
 }
+.recipteimg img{
+    width: 100%;
+    height: 100%;
+}
+
 .mainrecipte{
     grid-area: RMAIN;
     width: 100%;
