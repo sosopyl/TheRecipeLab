@@ -89,6 +89,18 @@ nav{
     grid-template-areas: 'c1 c2 c3 c4 c5 c6';
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+@media  (max-width: 
+	400px) { 
+        nav{
+            font-family: 'baltica';
+            margin: 10px auto;
+            display: grid;
+            max-width: 1000px;
+            grid-template-areas: 'c1 c2' 'c3 c4' 'c5 c6';
+            grid-template-columns: 1fr 1fr;
+            margin-top: 59px;
+        }
+}
 nav div a:hover, nav div a:active{
     color: orange;
     
@@ -144,6 +156,14 @@ nav div a:hover, nav div a:active{
     height: 350px;
     display: flex;
 }
+@media  (max-width: 
+	400px) { 
+        #discription{
+            width: 100%;
+            height: 450px;
+            display: flex;
+        }
+}
 #bgimg {
    width: 100%;
    overflow: hidden;
@@ -153,6 +173,7 @@ nav div a:hover, nav div a:active{
 #bgimg img{
     width: 100%;
 }
+
 #aboutus {
     font-size: 16px;
     z-index: 100;
@@ -163,6 +184,39 @@ nav div a:hover, nav div a:active{
 #aboutus h1{
     font-family: 'ninactt';
     font-size: 28px;
+}
+.weighttest{
+    width: 50%;
+}
+@media (max-width: 500px){
+    #discription{
+        padding: 20px auto;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+    }
+    .weighttest{
+        width: 90%;
+    }
+    #bgimg{
+        height: 200px;
+    }
+    #bgimg img{
+        width: auto;
+        height: 100%;
+    }
+    #aboutus {
+        margin-top: 40px;
+        font-size: 10px;
+        z-index: 100;
+        color: aliceblue;
+        width: 100%;
+        margin-left: 5%;
+    }
+    #aboutus h1{
+        font-family: 'ninactt';
+        font-size: 18px;
+    }
 }
 #whyus{
     font-family: 'baltica';
@@ -175,27 +229,31 @@ nav div a:hover, nav div a:active{
     'pt it'
     'ib pb';
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
+    /* grid-template-rows: 1fr 1fr ; */
 }
 
 .ptop{
+    grid-area: pt;
     width: 100%;
     text-align: end;
     height: auto;
 
 }
 .pbtm{
+    grid-area: pb;
     width: 100%;
     height: auto;
     text-align: start;
 }
 .imgtop{
+    grid-area: it;
 width: 100%;
 height: 100%;
 align-items: end;
 justify-content: start;
 }
 .imgbtm {
+    grid-area: ib;
 width: 100%;
 height: 100%;
 align-items: start;
@@ -214,7 +272,27 @@ justify-content: end;
     margin-top: 25px;
     padding-top: 25PX;
 }
+@media(max-width:500px){
+    #whyus   {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    
+    'ib'   'pt'  'pb' 'it';}
+  #whyus p{
+    text-align: center;
+  }
+  #whyus h2{
+    text-align: center;
+  }
+  .imgwhy{
+    flex-direction: column;
+  }
+  .imgwhy img{
+    width: 100%;
+    align-self: center;
+  }
 
+}
 .aboutreasons{
     width: 90%;
     font-family: "ninactt" ;
@@ -325,10 +403,42 @@ a{
     position: absolute;
     margin-bottom: 0px;
 }
-footer{
+footer {
     width: 100%;
-    height: 80px;
-    background-color: rgb(255, 255, 255);
+    height: 100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #ffba3a;
     text-align: center;
-    border-top: 1px solid brown;
-}
+    color: #ffffff;
+  }
+
+  @media(max-width: 500px){
+    #ourplus{
+        padding: 0px 15px;
+        max-width: 1000px;
+        height: fit-content;
+        padding-bottom: 50px;
+        margin-bottom: 300px; 
+        width: 100%;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-areas: 'plus1 ''plus2 ''plus3'' plus4';
+    }
+    .reason{height: fit-content;}
+    .reason{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .reasonbtn{
+        width: 50%;
+    }
+    .reasonbtn img{
+        width: 100%;
+        margin: auto;;
+    }
+  }

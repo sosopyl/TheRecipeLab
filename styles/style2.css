@@ -68,6 +68,27 @@ label{
     margin: 5px;
     font-size: 18px;
 } 
+@media(max-width: 500px){
+    .question{
+        margin: auto;
+        column-gap: 30px;
+        width: 90%;
+        display: grid;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        grid-template-areas: 
+        'AA''BA'
+        'CA';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; 
+    }
+    .questionimg{
+        justify-content: center;
+    }
+    .questiontext h6{
+        text-align: center;
+    }
+}
 .knowresults{
     width: 90%;
     max-width: 1000px;
@@ -151,4 +172,26 @@ label{
 
 .unseen{
     display: none;
+}
+@media(max-width:500px){
+    .resulttext {
+        margin-bottom: 90px;
+        font-family: 'baltica';
+        /* padding: 0 18px; */
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        width: 100%;
+        transition: max-height 0.2s ease-out;
+        display: grid;
+        column-gap: 20px;
+        row-gap: 20px;
+        grid-template-areas: 
+        'imgres nameres'
+        'textres textres'
+        '. btnres';
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows: auto;
+    
+    }
 }
