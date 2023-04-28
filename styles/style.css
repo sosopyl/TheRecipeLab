@@ -90,7 +90,7 @@ nav{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 @media  (max-width: 
-	400px) { 
+	650px) { 
         nav{
             font-family: 'baltica';
             margin: 10px auto;
@@ -152,26 +152,23 @@ nav div a:hover, nav div a:active{
     color: brown;
 }
 #discription{
+    background-image: url(bgimg.jpg);
+    background-position: right;
+    background-size: cover;
     width: 100%;
     height: 350px;
     display: flex;
 }
 @media  (max-width: 
-	400px) { 
+	650px) { 
         #discription{
+            background-position:left;
+            background-size: cover;
             width: 100%;
             height: 450px;
             display: flex;
+            background-image: url(bgimg.jpg);
         }
-}
-#bgimg {
-   width: 100%;
-   overflow: hidden;
-   position: absolute;
-   height: 350px;
-}
-#bgimg img{
-    width: 100%;
 }
 
 #aboutus {
@@ -188,18 +185,16 @@ nav div a:hover, nav div a:active{
 .weighttest{
     width: 50%;
 }
-@media (max-width: 500px){
+@media (max-width: 650px){
     #discription{
         padding: 20px auto;
         width: 100%;
         height: fit-content;
         display: flex;
+        background-image: url(bgimg.jpg);
     }
     .weighttest{
         width: 90%;
-    }
-    #bgimg{
-        height: 200px;
     }
     #bgimg img{
         width: auto;
@@ -272,7 +267,7 @@ justify-content: end;
     margin-top: 25px;
     padding-top: 25PX;
 }
-@media(max-width:500px){
+@media(max-width:650px){
     #whyus   {
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -296,7 +291,7 @@ justify-content: end;
 .aboutreasons{
     width: 90%;
     font-family: "ninactt" ;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 150px;
     text-align: center;
     max-width: 650px;
@@ -309,7 +304,7 @@ justify-content: end;
     max-width: 1000px;
     height: fit-content;
     padding-bottom: 50px;
-    margin-bottom: 300px; 
+    margin-bottom: 30px; 
     width: 100%;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -317,8 +312,10 @@ justify-content: end;
     grid-template-areas: 'plus1 plus2 plus3 plus4';
 }
 .reason{
+    padding-top: 5px;
     width: 100%;
-    height: 200px;
+    top: 0px;
+    height: 100%;
 }
 a{
     text-decoration: none;
@@ -415,13 +412,13 @@ footer {
     color: #ffffff;
   }
 
-  @media(max-width: 500px){
+  @media(max-width: 650px){
     #ourplus{
         padding: 0px 15px;
         max-width: 1000px;
         height: fit-content;
         padding-bottom: 50px;
-        margin-bottom: 300px; 
+        margin-bottom: 30px; 
         width: 100%;
         gap: 10px;
         grid-template-columns: 1fr;
@@ -435,7 +432,7 @@ footer {
         justify-content: center;
     }
     .reasonbtn{
-        width: 50%;
+        width: 70%;
     }
     .reasonbtn img{
         width: 100%;

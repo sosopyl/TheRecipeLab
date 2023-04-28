@@ -68,7 +68,7 @@ label{
     margin: 5px;
     font-size: 18px;
 } 
-@media(max-width: 500px){
+@media(max-width: 650px){
     .question{
         margin: auto;
         column-gap: 30px;
@@ -173,7 +173,14 @@ label{
 .unseen{
     display: none;
 }
-@media(max-width:500px){
+@media(max-width:650px){
+    #bgimg img{
+        height: 200px;
+        min-width: 100%;
+    }
+    #aboutus{
+        margin-top: 15px;
+    }
     .resulttext {
         margin-bottom: 90px;
         font-family: 'baltica';

@@ -289,3 +289,54 @@
     text-align: left;
     grid-area: comtext;
 }
+
+@media(max-width: 650px){
+    .recipte{
+        font-family: 'baltica';
+        /* margin-top: 100px; */
+        width: 95%;
+        max-width: 1000px;
+        display: grid;
+        height: fit-content;
+        grid-template-areas: 
+        'RIMG''RNAME'
+        'RINFA'
+        'RINGR' 'RMAIN'
+        ;
+        column-gap: 15px;
+        row-gap: 5px;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 1fr 2fr; */
+        margin-bottom: 80px;
+        border-bottom: 1px solid grey;
+        padding-bottom: 30px;
+    }
+    .nameofrecipte{
+        width: 100%;
+    }
+    .nameofrecipte h4{
+        margin: auto;
+        text-align: center;
+    }
+    .nameofrecipte p{
+        width: 100%;
+        text-align: justify;
+        margin: 0px;
+    }
+    .step p{
+        text-align: justify;
+    }
+    .anotherrecipes{
+        margin-top: 15px;
+        margin-bottom: 50px;
+        width: 95%;
+        max-width: 1000px;
+        height: auto;
+        /* background-color: yellowgreen; */
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+
+} 
